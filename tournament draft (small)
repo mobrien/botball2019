@@ -1,1 +1,35 @@
-
+#include <kipr/botball.h>
+void move(int r, int l, int time)
+{
+    motor(0,r);
+    motor(1,l);
+    msleep(time);
+    msleep(1000);
+}
+int main()
+{
+    //wait_for_light(1);
+    move(100,100,10);
+    move(-100,100,10);
+    move(100,100,10);
+    move(-100,100,10);
+    //scooper stuff
+    move(100,100,10);
+    //scooper stuff
+    move(100,100,10);
+    //scooper stuff
+    move(100,100,10);
+    //scooper stuff
+    move(100,100,10);
+    move(-100,-100,10);
+    move(-100,100,10);
+    move(100,100,10);
+    //stick stuff
+    move(-100,-100,10);
+    move(-100,-100,10);
+    move(100,100,10);
+    move(-100,100,10);
+    move(100,100,10);
+    ao;
+    return 0;
+}
